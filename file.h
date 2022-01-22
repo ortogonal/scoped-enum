@@ -13,6 +13,8 @@ public:
 
     std::string name() const;
 
+    friend Permission operator|(const Permission &lhs, const Permission &rhs);
+
 private:
     std::string m_name;
     Permission m_permissions;
